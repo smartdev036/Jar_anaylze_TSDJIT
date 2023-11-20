@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+<title>Autoset Choices</title>
+<meta content="Paul Buckle" name="author">
+</head>
+<body alink="#000099" vlink="#990099" link="#000099"
+ style="font-family: arial,helvetica,sans-serif; font-size:14;color: rgb(226, 226, 226); background-color: rgb(39, 78, 117);">
+
+<div>
+The <b>Source Autoset</b>&nbsp;&nbsp;panel allows you to automatically adjust the oscilloscope's vertical and/or horizontal settings for live sources (Ch1...Ch4) to improve measurement accuracy.
+<br>
+</div>
+
+<hr>
+
+<div>
+<b>Autoset</b> button group:&nbsp;&nbsp;Select a button to initiate the desired action.
+</div>
+
+<table border=0 cellpadding=4 style="font-size:14">
+<tr>
+<td valign=top align=center><b>></b></td>
+<td>
+<b>ALL</b>: Execute both Vertical Scale and then Horizontal Resolution Autoset.
+</td>
+</tr>
+
+<tr>
+<td valign=top align=center><b>></b></td>
+<td>
+<b>Vertical Scale</b>: If necessary, change the source's Vertical Scale, Offset and Position so that the signal occupies &gt;=7 vertical divisions.&nbsp; (Signals with large offsets relative to their peak-peak may end up occupying a smaller vertical range.)
+</td>
+</tr>
+
+<tr>
+<td valign=top align=center><b>></b></td>
+<td>
+<b>Horizontal Resolution</b>: Adjust the oscilloscope horizontal resolution (1/sample rate) so that the number of samples on the fastest transition (edge) exceeds a specified target.&nbsp; When multiple sources are active, the sample rate required by the source with the fastest transitions prevails.&nbsp;&nbsp; Set the record length to the target value.&nbsp;&nbsp; (See <b>Optimize Horizontal For </b> button group).
+</td>
+</tr>
+
+<tr>
+<td valign=top align=center><b>></b></td>
+<td>
+<b>Undo</b>: Undo the most recent source autoset.&nbsp; This button is enabled immediately after an autoset is complete.&nbsp; This button is disabled after a measurement sequence.
+</td>
+</tr>
+</table>
+<br>
+<hr>
+
+<div>
+<b>Optimize Horizontal For</b> button group:&nbsp;&nbsp;Select one of the following sample&nbsp;rate / record&nbsp;length targets for Autoset <u>Horizontal Resolution</u>.&nbsp;  The chosen record length will be the shorter of the specified target or the maximum record length available on this oscilloscope.
+</div>
+
+<table border=0 cellpadding=4 style="font-size:14">
+<tr>
+<td valign=top align=center"><b>></b></td>
+<td valign=top>
+<b>Edge Resolution</b>: Minimum sample rate that has &gt;=&nbsp;5 &nbsp;S/transition.&nbsp; Target record length is 500k samples.
+</td>
+</tr>
+
+<tr>
+<td valign=top align=center"><b>></b></td>
+<td valign=top>
+<b>Max Edge Count</b>: Minimum sample rate that has &gt;=&nbsp;2.5&nbsp;S/transition.&nbsp; Rj/Dj analysis typically requires a large number of clock cycles or data symbols.&nbsp; If this oscilloscope does not have a long acquisition memory, it may be necessary trade some edge timing accuracy for a larger data set.&nbsp; Target record length is 2M samples.
+</td>
+</tr>
+</table>
+
+</body>
+</html>
